@@ -5,6 +5,7 @@
 
   <a class="botao" href="/publicacoes">Conhecer o acervo</a>
 </section>
+<<<<<<< HEAD
   <h2>Destaques do portal</h2>
   
   <!--cartões de cursos-->
@@ -16,12 +17,27 @@
     </section>
   {{else}}
 
+=======
+
+<h2>Destaques do portal</h2>
+
+{{#if possuiPublicacoes}}
+  <section class="grade" aria-label="Lista de publicações">
+    {{#each publicacoes}}
+      {{> cartao-publicacao}}
+    {{/each}}
+  </section>
+{{else}}
+>>>>>>> 7dd59b1 (Estilização dos cartões ao detalhar conteúdo)
   <section class="estado-vazio">
     <h2>Nenhuma publicação cadastrada</h2>
     <p>O banco de dados ainda não possui registros para apresentar.</p>
   </section>
 {{/if}}
+<<<<<<< HEAD
 <section>
+=======
+>>>>>>> 7dd59b1 (Estilização dos cartões ao detalhar conteúdo)
 
 </section>
 

@@ -39,7 +39,11 @@ a { color: var(--vermelho); }
   background: var(--branco);
 }
 
+<<<<<<< HEAD
 .cabecalho__conteudo::before { /*barra lateral*/
+=======
+.cabecalho__conteudo::before { /* barra lateral */
+>>>>>>> 7dd59b1 (Estilização dos cartões ao detalhar conteúdo)
   content: "";
   position: absolute;
   top: 0;
@@ -89,7 +93,11 @@ a { color: var(--vermelho); }
   padding: clamp(28px, 6vw, 64px);
   border: 1px solid var(--borda);
   border-radius: 24px;
+<<<<<<< HEAD
   background: linear-gradient(135deg, var(--branco), var(--azul-100)); /*manter gradiente?*/
+=======
+  background: linear-gradient(135deg, var(--branco), var(--azul-100));
+>>>>>>> 7dd59b1 (Estilização dos cartões ao detalhar conteúdo)
   box-shadow: var(--sombra);
 }
 
@@ -204,6 +212,13 @@ h2 { margin-top: 0; }
   gap: 20px;
 }
 
+<<<<<<< HEAD
+=======
+/* ==========================================================================
+   ESTILO PADRÃO DO CARTÃO (Página /inicio)
+   ========================================================================== */
+
+>>>>>>> 7dd59b1 (Estilização dos cartões ao detalhar conteúdo)
 .cartao {
   position: relative;
   display: flex;
@@ -217,7 +232,11 @@ h2 { margin-top: 0; }
 }
 
 .cartao::before {
+<<<<<<< HEAD
   /* barra lateral do cartão */
+=======
+  /* Barra lateral vermelha da Home */
+>>>>>>> 7dd59b1 (Estilização dos cartões ao detalhar conteúdo)
   content: "";
   position: absolute;
   top: 1px;
@@ -228,18 +247,126 @@ h2 { margin-top: 0; }
   background: var(--vermelho);
 }
 
+<<<<<<< HEAD
+=======
+.cartao h2 {
+  margin-top: 18px;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--texto);
+}
+
+.cartao p { flex: 1; }
+
+>>>>>>> 7dd59b1 (Estilização dos cartões ao detalhar conteúdo)
 .cartao__topo, .cartao__rodape, .detalhe footer {
   display: flex;
   justify-content: space-between;
   gap: 16px;
 }
 
+<<<<<<< HEAD
 .identificador, .cartao__rodape, .detalhe footer { color: var(--muted); font-size: .9rem; }
 .cartao h2 { margin-top: 18px; font-size: 1.25rem; }
 .cartao p { flex: 1; }
 .cartao__rodape { align-items: center; margin-top: 18px; }
 .cartao__rodape a { font-weight: 700; }
 
+=======
+.identificador, .cartao__rodape, .detalhe footer {
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.cartao__rodape {
+  align-items: center;
+  margin-top: 18px;
+}
+
+.cartao__rodape a { font-weight: 700; }
+
+/* ==========================================================================
+   ESTILO MODIFICADOR (Exclusivo para a Página /lista)
+   ========================================================================== */
+
+.cartao--lista {
+  align-items: center;
+  text-align: center;
+  min-height: 380px;
+  padding: 32px 24px 24px;
+  border: 2px solid var(--texto);
+  border-radius: 16px;
+  background: var(--branco);
+  box-shadow: none;
+}
+
+/* Remove a barra vermelha lateral na página de lista */
+.cartao--lista::before {
+  display: none;
+}
+
+.cartao__icone {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid var(--vermelho);
+  background-color: #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cartao__icone img {
+  max-width: 65%;
+  max-height: 65%;
+  object-fit: contain;
+}
+
+.cartao--lista h2 {
+  margin: 10px 0 6px;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.cartao__carga-horaria {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.cartao__status {
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 20px;
+  background: var(--vermelho);
+  color: var(--branco);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.cartao--lista .cartao__rodape {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: auto;
+}
+
+.cartao--lista .cartao__rodape .botao--contorno {
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   DEMAIS SEÇÕES
+   ========================================================================== */
+
+>>>>>>> 7dd59b1 (Estilização dos cartões ao detalhar conteúdo)
 .detalhe { max-width: 800px; margin-inline: auto; }
 .detalhe h1 { font-size: clamp(2rem, 5vw, 3rem); }
 .detalhe__conteudo { margin-block: 28px; font-size: 1.15rem; }
@@ -265,4 +392,8 @@ code { padding: 2px 6px; border-radius: 4px; background: var(--vermelho); }
   .grade { grid-template-columns: 1fr; }
   .conteudo-principal { padding-block: 32px 48px; }
   .cartao__rodape, .detalhe footer { align-items: flex-start; flex-direction: column; }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 7dd59b1 (Estilização dos cartões ao detalhar conteúdo)

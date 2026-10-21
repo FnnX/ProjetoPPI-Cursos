@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <article class="cartao">
   <!--cria modelo para cartão de curso-->
   <div class="cartao__topo">
@@ -12,3 +13,30 @@
     <a class="botao botao--contorno" href="/publicacoes/{{id}}">Ver detalhes</a>
   </footer>
 </article>
+=======
+<article class="cartao {{#if lista}}cartao--lista{{/if}}">
+  {{#if lista}}
+    {{! Layout exclusivo para a página de Lista }}
+    <div class="cartao__icone">
+      <img src="{{icone}}" alt="Ícone {{titulo}}">
+    </div>
+
+    <h2>{{titulo}}</h2>
+    <p class="cartao__carga-horaria">Carga horária: {{cargaHoraria}}</p>
+    <span class="cartao__status">{{status}}</span>
+
+    <footer class="cartao__rodape">
+      <a class="botao botao--contorno" href="/publicacoes/{{id}}">Detalhes</a>
+    </footer>
+  {{else}}
+    {{! Layout padrão para a página de Início }}
+    <div class="cartao__topo"></div>
+    <h2>{{titulo}}</h2>
+    <p>{{descricao}}</p>
+    <footer class="cartao__rodape">
+      <span>{{instrutor}}</span>
+      <a class="botao botao--contorno" href="/publicacoes/{{id}}">Ver detalhes</a>
+    </footer>
+  {{/if}}
+</article>
+>>>>>>> 7dd59b1 (Estilização dos cartões ao detalhar conteúdo)
