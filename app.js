@@ -69,6 +69,8 @@ async function prepararBanco() {
   await Publicacao.bulkCreate([
     //dados de exemplo para popular o banco de dados; O mural.sql serve como referência
     {
+      icone: "/images/ifrn.png",
+      status: "DISPONÍVEL",
       titulo: "Introdução ao Git",
       instrutor: "Fulano de Tal",
       cargaHoraria: "4 horas",
@@ -76,6 +78,8 @@ async function prepararBanco() {
       descricao: "Aprenda os conceitos básicos do Git"
     },
     {
+      icone: "/images/ifrn.png",
+      status: "EM ANDAMENTO",
       titulo: "Oficina de APIs",
       instrutor: "Cicrano de Tal",
       cargaHoraria: "6 horas",
@@ -83,6 +87,8 @@ async function prepararBanco() {
       descricao: "Aprenda a criar e consumir APIs"
     },
     {
+      icone: "/images/ifrn.png",
+      status: "DESTAQUE",
       titulo: "CSS responsivo",
       instrutor: "Beltrano de Tal",
       cargaHoraria: "3 horas",

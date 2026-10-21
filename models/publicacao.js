@@ -8,6 +8,14 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true,
         primaryKey: true
       },
+      icone: {
+        type: DataTypes.STRING(255),
+        allowNull: false
+      },
+      status: {
+        type: DataTypes.STRING(40),
+        allowNull: false
+      },
       titulo: {
         type: DataTypes.STRING(120),
         allowNull: false,
