@@ -5,7 +5,22 @@
 
   <a class="botao" href="/publicacoes">Conhecer o acervo</a>
 </section>
- <!-- EXIBIR DESTAQUES EM FORMATO DE CARTÃO -->
+  <h2>Destaques do portal</h2>
+  
+  <!--CARTÕES NÃO ESTÃO SENDO EXIBIDOS-->
+  {{#if possuiPublicacoes}}
+    <section class="grade" aria-label="Lista de publicações">
+      {{#each publicacoes}}
+        {{> cartao-publicacao}}
+      {{/each}}
+    </section>
+  {{else}}
+
+  <section class="estado-vazio">
+    <h2>Nenhuma publicação cadastrada</h2>
+    <p>O banco de dados ainda não possui registros para apresentar.</p>
+  </section>
+{{/if}}
 <section>
 
 </section>
