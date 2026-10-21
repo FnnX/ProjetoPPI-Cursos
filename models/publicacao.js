@@ -1,4 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
+  //cria o modelo de publicação, que será mapeado para a tabela "publicacoes" no banco de dados
   return sequelize.define(
     "Publicacao",
     {
@@ -15,22 +16,32 @@ module.exports = (sequelize, DataTypes) => {
           len: [3, 120]
         }
       },
-      conteudo: {
+      instrutor: {
+        type: DataTypes.STRING(80),
+        allowNull: false,
+        defaultValue: "Instrutor"
+      },
+      cargaHoraria: {
+        type: DataTypes.STRING(20),
+        allowNull: false,
+        validate: {
+          notEmpty: true,
+          len: [1, 20]
+        }
+      },
+      vagas: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        validate: {
+          min: 1
+        }
+      },
+      descricao: {
         type: DataTypes.TEXT,
         allowNull: false,
         validate: {
           notEmpty: true
         }
-      },
-      autor: {
-        type: DataTypes.STRING(80),
-        allowNull: false,
-        defaultValue: "Estudante"
-      },
-      categoria: {
-        type: DataTypes.STRING(40),
-        allowNull: false,
-        defaultValue: "Geral"
       }
     },
     {

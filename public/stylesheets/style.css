@@ -144,6 +144,19 @@ h2 { margin-top: 0; }
 
 .botao:hover, .botao:focus { background: var(--vermelho-claro); }
 
+.botao--contorno {
+  margin-top: 0;
+  padding: 8px 12px;
+  border: 2px solid var(--vermelho);
+  color: var(--vermelho);
+  background: transparent;
+}
+
+.botao--contorno:hover, .botao--contorno:focus {
+  color: var(--branco);
+  background: var(--vermelho);
+}
+
 .painel, .detalhe, .mensagem-sistema {
   margin-top: 32px;
   padding: 32px;

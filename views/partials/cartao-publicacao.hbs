@@ -1,12 +1,14 @@
 <article class="cartao">
+  <!--cria modelo para cartão de curso-->
   <div class="cartao__topo">
-    <span class="categoria">{{categoria}}</span>
-    <span class="identificador">#{{id}}</span>
+    {{!-- <span class="categoria">carga horária: {{cargaHoraria}}</span>
+    <span class="identificador">vagas: {{vagas}}</span>
+    <span class="identificador">#{{id}}</span> --}}
   </div>
   <h2>{{titulo}}</h2>
-  <p>{{conteudo}}</p>
+  <p>{{descricao}}</p>
   <footer class="cartao__rodape">
-    <span>{{autor}}</span>
-    <a href="/publicacoes/{{id}}">Ler publicação</a>
+    <span>{{instrutor}}</span>
+    <a class="botao botao--contorno" href="/publicacoes/{{id}}">Ver detalhes</a>
   </footer>
 </article>

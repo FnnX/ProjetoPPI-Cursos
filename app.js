@@ -67,12 +67,27 @@ async function prepararBanco() {
 
   const quantidade = await Publicacao.count();
   await Publicacao.bulkCreate([
+    //dados de exemplo para popular o banco de dados; O mural.sql serve como referência
     {
-      titulo: "3irvtr",
-      conteudo:
-        "Uma rota associa um endereço da aplicação a uma função executada pelo servidor.",
-      autor: "Ana Souza",
-      categoria: "euvou "
+      titulo: "Introdução ao Git",
+      instrutor: "Fulano de Tal",
+      cargaHoraria: "4 horas",
+      vagas: 20,
+      descricao: "Aprenda os conceitos básicos do Git"
+    },
+    {
+      titulo: "Oficina de APIs",
+      instrutor: "Cicrano de Tal",
+      cargaHoraria: "6 horas",
+      vagas: 20,
+      descricao: "Aprenda a criar e consumir APIs"
+    },
+    {
+      titulo: "CSS responsivo",
+      instrutor: "Beltrano de Tal",
+      cargaHoraria: "3 horas",
+      vagas: 20,
+      descricao: "Aprenda a criar layouts CSS"
     }
   ]);
 }
