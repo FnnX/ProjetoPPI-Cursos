@@ -205,6 +205,7 @@ h2 { margin-top: 0; }
 }
 
 .cartao {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 280px;
@@ -213,6 +214,18 @@ h2 { margin-top: 0; }
   border-radius: 16px;
   background: var(--branco);
   box-shadow: var(--sombra);
+}
+
+.cartao::before {
+  /* barra lateral do cartão */
+  content: "";
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  left: 1px;
+  width: 12px;
+  border-radius: 15px 0 0 15px;
+  background: var(--vermelho);
 }
 
 .cartao__topo, .cartao__rodape, .detalhe footer {
