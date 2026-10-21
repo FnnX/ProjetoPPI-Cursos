@@ -4,8 +4,8 @@ const router = express.Router();
 
 router.get("/", (req, res) => {
   res.render("index", {
-    titulo: "Mural de Publicações",
-    subtitulo: "Node.js, Express, Handlebars, Sequelize e SQLite"
+    titulo: "Cursos e Oficinas",
+    subtitulo: "Encontre cursos de forma simples e objetiva"
   });
 });
 

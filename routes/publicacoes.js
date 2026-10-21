@@ -11,9 +11,7 @@ router.get("/", async (req, res, next) => {
     });
 
     res.render("publicacoes/listar", {
-      titulo: "Publicações da turma",
-      descricao:
-        "Dados recuperados do SQLite com Sequelize e renderizados pelo Handlebars.",
+      titulo: "Cursos cadastrados",
       publicacoes,
       possuiPublicacoes: publicacoes.length > 0,
       quantidade: publicacoes.length

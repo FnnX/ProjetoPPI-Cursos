@@ -66,52 +66,15 @@ async function prepararBanco() {
   await sequelize.sync();
 
   const quantidade = await Publicacao.count();
-  if (quantidade === 0) {
-    await Publicacao.bulkCreate([
-      {
-        titulo: "Como uma rota funciona?",
-        conteudo:
-          "Uma rota associa um endereço da aplicação a uma função executada pelo servidor.",
-        autor: "Ana Souza",
-        categoria: "Express"
-      },
-      {
-        titulo: "Para que serve o Handlebars?",
-        conteudo:
-          "O Handlebars combina um template HTML com os dados enviados pela rota.",
-        autor: "Bruno Lima",
-        categoria: "Handlebars"
-      },
-      {
-        titulo: "O que o findAll retorna?",
-        conteudo:
-          "O método findAll consulta os registros de um modelo e devolve uma coleção.",
-        autor: "Carla Mendes",
-        categoria: "Sequelize"
-      },
-      {
-        titulo: "Por que utilizamos await?",
-        conteudo:
-          "O await permite aguardar a conclusão de uma operação assíncrona antes de continuar.",
-        autor: "Diego Santos",
-        categoria: "JavaScript"
-      },
-      {
-        titulo: "De onde vem o HTML final?",
-        conteudo:
-          "O servidor renderiza a view e envia ao navegador uma resposta HTML pronta.",
-        autor: "Eduarda Alves",
-        categoria: "Servidor"
-      },
-      {
-        titulo: "Qual é o papel do modelo?",
-        conteudo:
-          "O modelo representa no JavaScript a estrutura das informações persistidas no banco.",
-        autor: "Felipe Rocha",
-        categoria: "Sequelize"
-      }
-    ]);
-  }
+  await Publicacao.bulkCreate([
+    {
+      titulo: "3irvtr",
+      conteudo:
+        "Uma rota associa um endereço da aplicação a uma função executada pelo servidor.",
+      autor: "Ana Souza",
+      categoria: "euvou "
+    }
+  ]);
 }
 
 module.exports = { createApp, prepararBanco };
